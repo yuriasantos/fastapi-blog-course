@@ -21,5 +21,5 @@ class ShowBlog(BaseModel):
     content: str | None
     created_at: datetime
 
-    class Config():
-        orm_mode = True
+    class ConfigDict:
+        from_attributes = True

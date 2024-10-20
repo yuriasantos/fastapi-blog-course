@@ -9,5 +9,5 @@ class ShowUser(BaseModel):
     email: EmailStr
     is_active: bool
 
-    class Config():
-        orm_mode = True
+    class ConfigDict():
+        from_attributes = True
